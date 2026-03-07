@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureComm System Console</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>SecureComm HTTPS Analyzer</h2>
+            <p>Real-time TLS Scanning & Certificate Validation</p>
+        </div>
+
+        <div class="input-group">
+            <select id="scanType" class="scan-select">
+                <option value="https">HTTPS Analysis</option>
+                <option value="nmap">Port Scan (Nmap)</option>
+            </select>
+            <input type="text" id="domain" placeholder="Enter target domain or IP" autocomplete="off">
+            <button id="analyzeBtn" onclick="initiateScan()">Initiate Scan</button>
+        </div>
+
+        <div class="console-container" id="console">
+            <div class="log-line">
+                <span class="log-time">[SYSTEM]</span>
+                <span class="log-msg log-info">Ready. Enter a domain to begin analysis.</span>
+            </div>
+            <!-- Logs will be injected here -->
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+</body>
+
+</html>
