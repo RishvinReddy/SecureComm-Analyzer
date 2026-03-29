@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SecureComm | Network Security Analysis Framework</title>
+  <meta name="description" content="SecureComm-Analyzer is a comprehensive cybersecurity framework demonstrating encrypted communication, intrusion detection, and network security analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ======= PRELOADER ======= -->
+<div id="preloader">
+  <div class="pre-ring"></div>
+  <div class="pre-text">SecureComm</div>
+</div>
+
+<!-- ======= SCROLL PROGRESS ======= -->
+<div id="scroll-progress"></div>
+
+<!-- ======= BACK TO TOP ======= -->
+<button id="back-to-top" title="Back to top">↑</button>
+
+<!-- ======= NAV ======= -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <span class="lock-icon">🔐</span>
+    <span>SecureComm</span>
+  </div>
+  <div class="nav-links" id="nav-links">
+    <a href="#features">Features</a>
+    <a href="#demo">Live Demo</a>
+    <a href="#terminal">Terminal</a>
+    <a href="#threat">Threats</a>
+    <a href="#metrics">Metrics</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <a href="https://github.com/RishvinReddy/SecureComm-Analyzer" target="_blank" class="nav-cta desktop-only">View on GitHub</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<!-- Mobile Menu Drawer -->
+<div class="mobile-drawer" id="mobile-drawer">
+  <a href="#features" class="drawer-link">⚙️ Features</a>
+  <a href="#demo" class="drawer-link">🔥 Live Demo</a>
+  <a href="#terminal" class="drawer-link">🖥️ Terminal</a>
+  <a href="#threat" class="drawer-link">🚨 Threats</a>
+  <a href="#metrics" class="drawer-link">📊 Metrics</a>
+  <a href="#faq" class="drawer-link">❓ FAQ</a>
+  <a href="https://github.com/RishvinReddy/SecureComm-Analyzer" target="_blank" class="drawer-link">🐙 GitHub</a>
+</div>
+
+<!-- ======= HERO ======= -->
+<header id="hero">
+  <div class="hero-bg-overlay"></div>
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge" data-aos="fade-down">🛡️ Cybersecurity Analysis Framework</div>
+    <h1 data-aos="fade-up" data-aos-delay="100">SecureComm<span class="accent">-Analyzer</span></h1>
+    <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+      A framework for <span id="tw-phrase" class="tw-highlight">real-time encryption</span> —
+      studying intrusion detection, traffic analysis, and cyberattack mitigation.
+    </p>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+      <a href="https://github.com/RishvinReddy/SecureComm-Analyzer" target="_blank" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub Repository
+      </a>
+      <a href="#demo" class="btn-secondary">Try Live Demo ↓</a>
+    </div>
+    <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+      <div class="stat"><span class="stat-num" data-target="7">0</span><span class="stat-label">Security Layers</span></div>
+      <div class="stat"><span class="stat-num" data-target="5">0</span><span class="stat-label">Tools Integrated</span></div>
+      <div class="stat"><span class="stat-num" data-target="256">0</span><span class="stat-label">Bit Encryption</span></div>
+      <div class="stat"><span class="stat-num" data-target="99">0</span><span class="stat-label">% Threat Detection</span></div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-dot"></div>
+  </div>
+</header>
+
+<!-- ======= FEATURES ======= -->
+<section id="features">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">⚙️ Capabilities</span>
+      <h2>Core Features</h2>
+      <p>A multi-layered security analysis system built for academic and professional cybersecurity workflows.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="feature-icon">🔒</div>
+        <h3>End-to-End Encryption</h3>
+        <p>GnuPG-powered cryptographic message protection ensuring data confidentiality throughout transmission.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="feature-icon">📡</div>
+        <h3>Traffic Analysis</h3>
+        <p>Deep packet inspection using Wireshark to identify suspicious patterns and unauthorized access attempts.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="feature-icon">🚨</div>
+        <h3>Intrusion Detection</h3>
+        <p>Snort-based IDS that monitors network traffic and triggers alerts on malicious behavioral patterns.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="feature-icon">🎭</div>
+        <h3>Attack Simulation</h3>
+        <p>Controlled phishing and social engineering attack simulations using GoPhish to test defenses.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="feature-icon">📋</div>
+        <h3>Incident Response</h3>
+        <p>Structured NIST-aligned incident response planning for rapid containment and recovery.</p>
+      </div>
+      <div class="feature-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="feature-icon">🧠</div>
+        <h3>Security Insights</h3>
+        <p>Actionable findings on network vulnerabilities, encryption gaps, and defensive countermeasures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= LIVE DEMO SIMULATION ======= -->
+<section id="demo">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🔥 Interactive</span>
+      <h2>Live Demo Simulation</h2>
+      <p>Experience a simulated secure communication session. Watch how messages are encrypted in real-time.</p>
+    </div>
+    <div class="demo-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="chat-panel">
+        <div class="chat-header">
+          <div class="chat-avatar">A</div>
+          <div>
+            <div class="chat-name">Alice → Bob</div>
+            <div class="chat-status"><span class="status-dot"></span> Secured Channel · TLS 1.3</div>
+          </div>
+          <div class="chat-shield">🛡️</div>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input-row">
+          <input type="text" id="demo-input" class="chat-input" placeholder="Type a message to encrypt..." maxlength="80" />
+          <button id="send-btn" class="send-btn">Send 🔐</button>
+        </div>
+      </div>
+      <div class="encrypt-panel" data-aos="fade-left" data-aos-delay="200">
+        <div class="ep-header">🔑 Encryption Activity Log</div>
+        <div id="encrypt-log" class="ep-log">
+          <div class="log-entry inactive">Waiting for message...</div>
+        </div>
+        <div class="ep-badge" id="security-badge">🔓 Idle</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= ENCRYPTION VISUALIZATION ======= -->
+<section id="encryption">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🔑 Security</span>
+      <h2>Encryption Flow Visualizer</h2>
+      <p>See how a plaintext message transforms into a secure, encrypted packet — step-by-step.</p>
+    </div>
+    <div class="enc-flow-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="enc-input-row">
+        <input type="text" id="enc-input" class="enc-text-input" placeholder="Enter any text to visualize encryption..." value="Hello, SecureComm!" />
+        <button id="enc-btn" class="btn-primary">Visualize 🔐</button>
+      </div>
+      <div class="enc-stages" id="enc-stages">
+        <div class="enc-stage" id="stage-plain">
+          <div class="stage-label">① Plaintext</div>
+          <div class="stage-box plain-box" id="plain-text">Hello, SecureComm!</div>
+        </div>
+        <div class="stage-arrow">→</div>
+        <div class="enc-stage" id="stage-key">
+          <div class="stage-label">② Key Generation</div>
+          <div class="stage-box key-box" id="key-text">AES-256 Key</div>
+        </div>
+        <div class="stage-arrow">→</div>
+        <div class="enc-stage" id="stage-cipher">
+          <div class="stage-label">③ Ciphertext</div>
+          <div class="stage-box cipher-box" id="cipher-text">—</div>
+        </div>
+        <div class="stage-arrow">→</div>
+        <div class="enc-stage" id="stage-hash">
+          <div class="stage-label">④ SHA-256 Hash</div>
+          <div class="stage-box hash-box" id="hash-text">—</div>
+        </div>
+        <div class="stage-arrow">→</div>
+        <div class="enc-stage" id="stage-tls">
+          <div class="stage-label">⑤ TLS Packet</div>
+          <div class="stage-box tls-box" id="tls-text">—</div>
+        </div>
+      </div>
+      <div class="enc-status" id="enc-status">Click "Visualize" to begin the encryption flow</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= METRICS ======= -->
+<section id="metrics">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">📊 Analytics</span>
+      <h2>Security Metrics</h2>
+      <p>Key performance indicators demonstrating the effectiveness of the SecureComm security framework.</p>
+    </div>
+    <div class="metrics-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="metric-label">Threat Detection Rate</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="97" style="--bar-color: #38bdf8;"></div></div>
+        <div class="metric-value">97%</div>
+      </div>
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="metric-label">Encryption Strength</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="100" style="--bar-color: #10b981;"></div></div>
+        <div class="metric-value">AES-256</div>
+      </div>
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="metric-label">Packet Analysis Coverage</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="92" style="--bar-color: #a78bfa;"></div></div>
+        <div class="metric-value">92%</div>
+      </div>
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="metric-label">False Positive Rate</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="4" style="--bar-color: #f59e0b;"></div></div>
+        <div class="metric-value">4% (Low)</div>
+      </div>
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="400">
+        <div class="metric-label">Incident Response Speed</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="88" style="--bar-color: #ef4444;"></div></div>
+        <div class="metric-value">&lt;2 min MTTD</div>
+      </div>
+      <div class="metric-card" data-aos="zoom-in" data-aos-delay="500">
+        <div class="metric-label">System Security Score</div>
+        <div class="metric-bar-wrap"><div class="metric-bar" data-width="95" style="--bar-color: #38bdf8;"></div></div>
+        <div class="metric-value">9.5 / 10</div>
+      </div>
+    </div>
+    <div class="score-cards" data-aos="fade-up" data-aos-delay="200">
+      <div class="score-card" data-aos="flip-left" data-aos-delay="0">
+        <div class="score-icon">⚡</div>
+        <div class="score-num">~2ms</div>
+        <div class="score-desc">Avg. Encryption Latency</div>
+      </div>
+      <div class="score-card" data-aos="flip-left" data-aos-delay="100">
+        <div class="score-icon">🛡️</div>
+        <div class="score-num">7</div>
+        <div class="score-desc">Defense Layers</div>
+      </div>
+      <div class="score-card" data-aos="flip-left" data-aos-delay="200">
+        <div class="score-icon">🔑</div>
+        <div class="score-num">256-bit</div>
+        <div class="score-desc">Key Length</div>
+      </div>
+      <div class="score-card" data-aos="flip-left" data-aos-delay="300">
+        <div class="score-icon">📡</div>
+        <div class="score-num">10k+</div>
+        <div class="score-desc">Packets Analyzed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= ARCHITECTURE ======= -->
+<section id="architecture">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🏗️ Design</span>
+      <h2>System Architecture</h2>
+      <p>A layered security model integrating communication, encryption, monitoring, and response.</p>
+    </div>
+    <div class="arch-flow" data-aos="fade-up" data-aos-delay="100">
+      <div class="arch-node user-node">
+        <div class="arch-icon">👤</div>
+        <div class="arch-title">User Communication</div>
+        <div class="arch-sub">Web / Email / Data</div>
+      </div>
+      <div class="arch-arrow-down">↓</div>
+      <div class="arch-node">
+        <div class="arch-icon">🌐</div>
+        <div class="arch-title">Network Transmission</div>
+        <div class="arch-sub">TCP/IP Stack</div>
+      </div>
+      <div class="arch-arrow-down">↓</div>
+      <div class="arch-node highlight-node">
+        <div class="arch-icon">🔒</div>
+        <div class="arch-title">Security Protocols</div>
+        <div class="arch-sub">TLS/SSL · AES-256 · GnuPG</div>
+      </div>
+      <div class="arch-arrow-down">↓</div>
+      <div class="arch-node">
+        <div class="arch-icon">📡</div>
+        <div class="arch-title">Traffic Monitoring</div>
+        <div class="arch-sub">Wireshark Packet Inspection</div>
+      </div>
+      <div class="arch-arrow-down">↓</div>
+      <div class="arch-node">
+        <div class="arch-icon">🚨</div>
+        <div class="arch-title">Intrusion Detection</div>
+        <div class="arch-sub">Snort IDS · Threat Alerts</div>
+      </div>
+      <div class="arch-arrow-down">↓</div>
+      <div class="arch-node response-node">
+        <div class="arch-icon">🛡️</div>
+        <div class="arch-title">Incident Response</div>
+        <div class="arch-sub">NIST SP 800-61 Framework</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TECH STACK ======= -->
+<section id="tech">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🛠️ Tools</span>
+      <h2>Technology Stack</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="tech-icon">🔬</div>
+        <div class="tech-name">Wireshark</div>
+        <div class="tech-desc">Packet analysis & traffic inspection</div>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="tech-icon">🔑</div>
+        <div class="tech-name">GnuPG</div>
+        <div class="tech-desc">Cryptographic message protection</div>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="tech-icon">🚦</div>
+        <div class="tech-name">Snort IDS</div>
+        <div class="tech-desc">Signature-based intrusion detection</div>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="tech-icon">🎣</div>
+        <div class="tech-name">GoPhish</div>
+        <div class="tech-desc">Phishing simulation & awareness</div>
+      </div>
+      <div class="tech-card" data-aos="fade-up" data-aos-delay="320">
+        <div class="tech-icon">🐧</div>
+        <div class="tech-name">Linux</div>
+        <div class="tech-desc">Security tool deployment environment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= TERMINAL SIMULATOR ======= -->
+<section id="terminal">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🖥️ CLI</span>
+      <h2>Security Terminal</h2>
+      <p>Run simulated cybersecurity commands and see live output — just like a real analyst workstation.</p>
+    </div>
+    <div class="terminal-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="terminal-topbar">
+        <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+        <span class="t-title">root@securecomm:~</span>
+      </div>
+      <div class="terminal-body" id="terminal-body">
+        <div class="t-line"><span class="t-prompt">root@securecomm:~#</span> <span class="t-typed" id="t-typed"></span><span class="t-cursor">█</span></div>
+        <div id="t-output"></div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="t-prompt-input">$</span>
+        <input type="text" id="t-input" class="t-input" placeholder="Type a command (try: help, scan, encrypt, snort, status)" />
+        <button id="t-run" class="t-run-btn">Run ▶</button>
+      </div>
+      <div class="terminal-hints">
+        <span class="hint-tag" data-cmd="help">help</span>
+        <span class="hint-tag" data-cmd="scan">scan</span>
+        <span class="hint-tag" data-cmd="encrypt">encrypt</span>
+        <span class="hint-tag" data-cmd="snort">snort</span>
+        <span class="hint-tag" data-cmd="wireshark">wireshark</span>
+        <span class="hint-tag" data-cmd="status">status</span>
+        <span class="hint-tag" data-cmd="clear">clear</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= LIVE THREAT MONITOR ======= -->
+<section id="threat">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🚨 Real-time</span>
+      <h2>Live Threat Monitor</h2>
+      <p>Simulated real-time intrusion detection feed — mirroring how Snort IDS alerts analysts to malicious activity.</p>
+    </div>
+    <div class="threat-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="threat-header">
+        <div class="threat-title">🔴 IDS Alert Stream — Snort v3.0</div>
+        <div class="threat-controls">
+          <button id="threat-toggle" class="threat-btn active">⏸ Pause</button>
+          <button id="threat-clear" class="threat-btn">🗑 Clear</button>
+        </div>
+      </div>
+      <div class="threat-stats-row">
+        <div class="ts-card"><span id="ts-blocked">0</span><small>Blocked</small></div>
+        <div class="ts-card warn"><span id="ts-warned">0</span><small>Warnings</small></div>
+        <div class="ts-card crit"><span id="ts-critical">0</span><small>Critical</small></div>
+      </div>
+      <div class="threat-feed" id="threat-feed"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FAQ ======= -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">❓ Viva Ready</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions from faculty evaluations and technical interviews — answered clearly.</p>
+    </div>
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <div class="faq-item">
+        <button class="faq-q">What is the purpose of SecureComm-Analyzer? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">SecureComm-Analyzer is an academic cybersecurity framework that studies how secure communication protocols work, how threats are detected, and how incident response is conducted. It integrates tools like Wireshark, Snort, GnuPG, and GoPhish to simulate real-world security workflows.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does end-to-end encryption work in this system? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Messages are encrypted using GnuPG (AES-256) before transmission. Only the intended recipient holds the private key required to decrypt. TLS 1.3 further secures the transport channel, ensuring no plaintext is ever exposed on the network.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What is Snort and how is it used here? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Snort is an open-source Intrusion Detection System (IDS). In SecureComm-Analyzer, Snort monitors network traffic using predefined rules to detect port scans, malicious payloads, and anomalous behavior — then generates alerts for administrator review.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What cybersecurity frameworks were referenced? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">The project aligns with the NIST Cybersecurity Framework (CSF) and NIST SP 800-61 for Incident Handling. OWASP guidelines were also referenced for web-layer security considerations and threat categorization.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Why was GoPhish used in this project? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">GoPhish simulates phishing campaign attacks to test an organization's human-layer defenses. It helps understand how social engineering exploits trust rather than technical vulnerabilities, and supports designing better awareness programs.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What are the future enhancements planned? <span class="faq-arrow">▼</span></button>
+        <div class="faq-a">Future work includes ML-based anomaly detection (replacing static Snort rules), real-time dashboards integrated with SIEM tools (like Splunk or ELK), automated incident response playbooks, and cloud security monitoring integration.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CONTACT ======= -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-card" data-aos="zoom-in">
+      <div class="contact-avatar">GYR</div>
+      <h2>Rishvin Reddy</h2>
+      <p class="contact-sub">B.Tech Computer Science & Engineering · Woxsen University</p>
+      <div class="contact-links">
+        <a href="https://github.com/RishvinReddy" target="_blank" class="contact-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub Profile
+        </a>
+        <a href="https://github.com/RishvinReddy/SecureComm-Analyzer" target="_blank" class="contact-link">
+          📂 View Project
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= NETWORK TOPOLOGY ======= -->
+<section id="topology">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-tag">🕸️ Live Graph</span>
+      <h2>Network Topology</h2>
+      <p>Real-time animated visualization of the SecureComm security architecture — watch data flow through each layer.</p>
+    </div>
+    <div class="topology-wrap" data-aos="fade-up" data-aos-delay="100">
+      <canvas id="topology-canvas"></canvas>
+      <div class="topology-legend">
+        <div class="tl-item"><span class="tl-dot" style="background:#10b981"></span> Active Node</div>
+        <div class="tl-item"><span class="tl-dot" style="background:#38bdf8"></span> Data Packet</div>
+        <div class="tl-item"><span class="tl-dot" style="background:#ef4444"></span> Threat Blocked</div>
+        <div class="tl-item"><span class="tl-dot" style="background:#a78bfa"></span> Encrypted Flow</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= MATRIX RAIN ======= -->
+<section id="matrix-section">
+  <div class="matrix-inner">
+    <canvas id="matrix-canvas"></canvas>
+    <div class="matrix-overlay-text" data-aos="fade-up">
+      <div class="matrix-badge">🔐 LIVE STREAM</div>
+      <h2>Encrypted Data in Transit</h2>
+      <p>Every character you see represents an encrypted byte traveling through the SecureComm pipeline.</p>
+      <div class="matrix-stats">
+        <div class="ms"><span id="m-bytes">0</span><small>Bytes/sec</small></div>
+        <div class="ms"><span id="m-packets">0</span><small>Packets</small></div>
+        <div class="ms"><span id="m-cipher">AES-256</span><small>Cipher</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">🔐 SecureComm-Analyzer</div>
+    <div class="footer-links">
+      <a href="#features">Features</a>
+      <a href="#demo">Demo</a>
+      <a href="#metrics">Metrics</a>
+      <a href="https://github.com/RishvinReddy/SecureComm-Analyzer" target="_blank">GitHub</a>
+    </div>
+    <div class="footer-copy">© 2026 Rishvin Reddy · MIT License</div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<!-- Toast stack -->
+<div id="toast-stack"></div>
+
+<!-- Cursor glow -->
+<div id="cursor-glow"></div>
+
+</body>
+</html>
